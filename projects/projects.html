@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="description" content="">
+        <link rel="stylesheet" type="text/css" href="projects.css">
+        <title> Projects | Resume </title>
+    </head>
+
+    <body>  
+        <div id="page-wrapper">
+            <header>
+                <div id="header-parent">
+                    <div id="header-child-1">
+                        <h1>Projects</h1>
+                    </div>
+                    <div id="header-child-2">
+                        <p>Revelant Projects</p>
+                    </div>
+                </div>
+            </header>
+
+            <div id="container">
+                <nav>
+                    <ul>
+                        <li><a href="../index/index.html">Home</a></li>
+                        <li><a href="../education/education.html">Education</a></li>
+                        <li><a href="../experience/experience.html">Experience</a></li>
+                        <li><a href="../projects/projects.html">Projects</a></li>
+                        <li><a href="../skills/skills.html">Skills</a></li>
+                        <li><a href="../ref/ref.html">References</a></li>
+                    </ul>
+                </nav>
+                
+                <main>
+                    <div id="calc-title">
+                        <h2>My Calculator</h2>
+                    </div>
+                    <div id="calculator">
+
+                        <div class="calc-element">
+                            <label for="first-number">First Number:</label> <input type="text" id="first-number">
+                        </div>
+
+                        <div class="calc-element">
+                            <label for="second-number">Second Number:</label> <input type="text" id="second-number">
+                        </div>
+
+                        <div class="calc-element" id="buttons">
+                            <button onclick="addition()"> + </button>
+                            <button onclick="subtraction()"> - </button>
+                            <button onclick="multiplication()"> * </button>
+                            <button onclick="division()"> / </button>
+                            <button onclick="power()"> ** </button>
+                            <button onclick="clearNumbers()"> Clear </button>
+                        </div>
+
+                        <div class="calc-element">
+                            <h3 id="output"></h3>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+            <footer>
+                <p>All Rights Reserved: <a href="">Credits</a> &#169; </p>
+            </footer>
+        </div>
+        <script src="calc.js"></script>
+    </body>
+</html>

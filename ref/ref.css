@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin:0;
+    box-sizing:border-box;
+}
+
+#page-wrapper{
+    width:80vw;
+    margin:0 auto;
+
+}
+
+
+header{
+    background-color:#7F534B;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    padding: 1vh 3vw;
+}
+
+/*gets weird when height is small*/
+#container{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+   
+}
+
+nav {
+    background-color: #39512A;
+    width:30%;
+}
+
+/*can't get it to vertically center*/
+nav ul{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    padding-left:0;
+    list-style: none;    
+    
+}
+
+nav li{
+    text-align:center;
+    border: 2px solid white;
+    width:75%;
+    padding: 2vh 0;
+    margin: 5vh auto;
+    /* margin-bottom:10px;*/
+    
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:3vw;
+}
+
+
+main{
+    width: 70%;
+    background-color:#F5F5DC;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Inter", serif;
+}
+
+.ref-table{
+    margin-top:5vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table{
+    margin-top:2vh;
+    width:80%;
+}
+
+.ref-table th{
+    background-color:#c4a484;
+}
+
+.ref-table td{
+    text-align:center;
+    padding:1vw;
+}
+
+
+footer{
+    background-color:#7F534B;
+    color:white;
+    display:flex;
+    padding: 2vw 2vh;
+}
+
+/*footer text not aligning center!*/
+
+
+/*when screen is reduced --> container should change flex direction to column*/
+
+
+@media screen and (max-width: 750px) {
+    /*align header center*/
+    header{
+        background-color:#7F534B;
+        color:white;
+        display:flex;
+        padding: 1vw 1vh;
+        align-items:center;
+    }
+
+    /*horizontal nav bar*/
+
+    #container{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+    }
+
+    nav {
+        width:100%;
+    }
+
+    nav ul{
+        display:flex;
+        flex-direction:row;
+    }
+
+
+    main{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        height:100vh;
+       
+    }
+
+
+}
+
